@@ -1,0 +1,44 @@
+#header {
+  padding: 25px;
+  border-bottom: 1px solid $secondary-background-color;
+  margin-bottom: 25px;
+}
+
+.logo {
+  flex: 1;
+  margin: 0;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  a {
+    background: $main-color;
+    padding: 4px 8px;
+    border-radius: 5px;
+    color: #fff;
+  }
+}
+
+.navigation {
+  display: flex;
+  flex: 2;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+
+  li {
+    a {
+      padding: 5px 10px;
+      font-size: 16px;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
+    &:last-child {
+      a {
+        padding-right: 0;
+      }
+    }
+  }
+}

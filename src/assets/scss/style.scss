@@ -1,0 +1,29 @@
+/***************************************************
+****************************************************
+
+  ##### Table of Content #####
+  ( 1 ) Normalize css
+  ( 2 ) Main
+  ( 3 ) Header
+  ( 4 ) Footer
+
+*****************************************************
+*****************************************************/
+
+// Variables
+@import "variables";
+
+// Normalize css
+@import "~normalize.css";
+
+// Main Styles
+@import "main";
+
+// Header
+@import "header";
+
+// Post
+@import "post";
+
+// Footer
+@import "footer";

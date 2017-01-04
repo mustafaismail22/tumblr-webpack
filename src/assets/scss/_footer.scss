@@ -1,0 +1,29 @@
+#footer {
+  background: #eee;
+  padding: 25px;
+  margin-top: 25px;
+
+  .container {
+    align-items: center;
+    // justify-content: center;
+  }
+}
+
+.copyright {
+  flex: 1;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+
+  a {
+    display: inline-block;
+    margin: 0 5px;
+  }
+
+  svg {
+    width: 15px;
+    height: auto;
+  }
+}

@@ -1,0 +1,81 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  background: $base-background-color;
+  color: $base-font-color;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $heading-font-family;
+}
+
+a {
+  color: $main-color;
+  transition: color 0.1s ease-in;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  } 
+}
+
+img {
+  display: inline-block;
+  max-width: 100%;
+}
+
+.browser-notice, .browser-noscript {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  background: #ffb82d;
+  z-index: 9999;
+  font-weight: bold;
+}
+
+.list-unstyled {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  li {
+    display: inline-block;
+    &:not(:last-child) {
+      margin-right: 5px;
+    }
+  }
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+#main {
+  flex: 1;
+  > .container {
+    display: block;
+    > .row {
+      position: relative;
+      display: block;
+      margin-left: -15px;
+      margin-right: -15px;
+    }
+  }
+}
